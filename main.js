@@ -143,8 +143,8 @@ let currentSubstring = "";
 let inputString = "abcabcbb";
 
 for (let i = 0; i < inputString.length; i++) {
-    const currentChar = inputString.charAt(i);
-    const charIndex = currentSubstring.indexOf(currentChar);
+    var currentChar = inputString.charAt(i);
+    var charIndex = currentSubstring.indexOf(currentChar);
 
     if (charIndex !== -1) {
         
