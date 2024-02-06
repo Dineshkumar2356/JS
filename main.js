@@ -11,6 +11,7 @@ function printFibonacci(n) {
     b = c;
   }
 }
+ 
 
 printFibonacci(10); // prints the first 10 numbers in the Fibonacci series
 
@@ -76,3 +77,87 @@ else if (number1 > 1) {
 else {
     console.log("The number is not a prime number.");
 }
+
+let b=10;
+var B=5;
+console.log(b)
+y=5; 
+z=2; 
+x=y+z;
+
+x=5+5; 
+document.write(x); 
+x="5"+"5"; 
+console.log(x) 
+x=5+"5"; 
+console.log(x)
+x="5"+5; 
+
+console.log(x)
+
+
+console.log("***********String Programs**********")
+
+console.log("*****String Reverse******")
+let s = "Dinesh"
+let rev = ""
+for(let i=s.length-1;i>=0;i--){
+    rev = rev+s.charAt(i)
+    
+}
+console.log(rev)
+
+console.log("Palindrome")
+
+let s1 = "malayalam"
+let rev1 = ""
+for(let i=s.length-1;i>=0;i--){
+    rev = rev+s.charAt(i)
+    
+}if(s1.match(rev1)){
+    console.log("This is a Palindrome")
+}else{
+    console.log("This is not a Palindrome")
+}
+
+
+console.log("****String Occurance****")
+
+
+let count = 0;
+let string = "Welcome to JavaScript";
+let letterToCheck = "a";
+
+for (let i = 0; i < string.length; i++) {
+    if (string.charAt(i) === letterToCheck) {
+        count += 1;
+    }
+}
+
+console.log(count);
+
+console.log("*****longest Substring********")
+
+let maxLength = 0;
+let currentSubstring = "";
+let inputString = "abcabcbb";
+
+for (let i = 0; i < inputString.length; i++) {
+    const currentChar = inputString.charAt(i);
+    const charIndex = currentSubstring.indexOf(currentChar);
+
+    if (charIndex !== -1) {
+        
+        currentSubstring = currentSubstring.slice(charIndex + 1);
+    }
+
+    
+    currentSubstring += currentChar;
+
+    maxLength = Math.max(maxLength, currentSubstring.length);
+}
+
+console.log("Length of the longest substring without repeating characters: " + maxLength);
+
+
+
