@@ -10,7 +10,7 @@ for (let i = 0; i < shortestString.length; i++) {
         if (arr.every(str => str.includes(substring))) {
             longestSubstring = substring;
         } else {
-            break; // No need to check longer substrings starting from the same position
+            break; 
         }
     }
 }
